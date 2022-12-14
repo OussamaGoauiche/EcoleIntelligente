@@ -1,0 +1,76 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  input {
+    width: 100%;
+  }
+  .container-footer{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+nb-card {
+  width: 435px;
+  height: 490px;
+  background: #FFFFFF;
+  border-radius: 3px;
+}
+.nom{
+  width: 179px;
+  height: 17.19px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #8A8A8A;
+}
+
+.info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 390px;
+  height: 100px;
+  background: #FFDDDD;
+  margin-top: 20px;
+}
+
+.info {
+  width: 251px;
+  height: 24px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #373737;
+}
+
+.alert{
+  width: 350px;
+  height: 32px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #373737;
+  margin-top: 5px;
+}
+
+.btn{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    outline: none;
+    color: #f0f3f5;
+    border: 1px solid transparent; 
+}

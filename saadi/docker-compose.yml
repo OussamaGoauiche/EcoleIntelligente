@@ -1,0 +1,26 @@
+
+version: '3'
+
+services:
+  frontend:
+    image: node:14
+    container_name: voxify-front
+    #
+    # Install dependencies, then start the app in dev mode
+    command: npm run start-devenv
+    #
+    # App will be available on http://localhost:8080 on host
+    ports:
+      - 8080:4200
+    #
+    # Default directory will be usr/src/app
+    working_dir: /usr/src/app
+    #
+    # Project files will be available inside docker at /usr/src/app
+    volumes:
+      - $PWD:/usr/src/app
+    #
+    # App sometimes needs to run on 0.0.0.0 internally to be exposed by Docker
+    environment:
+      - DEV_HOST=0.0.0.0
+      # - PROXY=http://pfrie-std.proxy.e2.rie.gouv.fr:8080

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="close-btn" style="margin-left: 391px;">
+  </div>
+  <nb-card>
+    <nb-card-header>Ajouter une organisation</nb-card-header>
+    <nb-card-body>
+      <p class="nom">Nom</p>
+      <input #name nbInput placeholder="Organisation name">
+      <div class="info-container">
+        <p class="info">Informations complémentaires</p>
+      </div>
+      <br>
+      <p class="nom">E-mail administrateur</p>
+      <input #name nbInput placeholder="Organisation name">
+      <p class="alert">Un mail sera envoyé au destinataire contenant 
+        ses informations de connexions</p>
+    </nb-card-body>
+    <nb-card-footer class="container-footer">
+      <button nbButton status="primary" (click)="submit(name.value)">Valider</button>
+      <button class="cancel" nbButton status="danger" (click)="cancel()">Annuler</button>
+    </nb-card-footer>
+  </nb-card>
+</div>
+
